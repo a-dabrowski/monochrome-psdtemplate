@@ -1,0 +1,230 @@
+$mobile: 768px;
+$bg-grey: #f4f4f4;
+$bg-dark-grey: #8e8e8e;
+@font-face {
+    font-family: 'Butler';
+    src: ('../fonts/Butler_and_ButlerStencil/Butler/Butler_Regular.otf');
+}
+
+@font-face {
+    font-family: 'GothamLight';
+    src: ('../fonts/gothamlight regular/gothamlight regular.otf');
+}
+
+@font-face {
+    font-family: 'Chronicle Display-Roman';
+    src: ('../fonts/chronicle display roman/chronicle display roman.otf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Butler', serif;
+    font-size: 64px;
+    font-weight: normal;
+    color: #fff;
+    padding: 5%;
+}
+
+h2 span {
+    display: block;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    padding: 80px;
+    font-family: 'Chronicle Display-Roman', serif;
+    font-weight: lighter;
+}
+
+h3 {
+    font-family: 'Butler', serif;
+    font-weight: normal;
+    font-size: 2.5em;
+    text-align: center;
+    color: $bg-dark-grey;
+    padding-top: 70px;
+}
+
+a {
+    display: block;
+    font-size: 0;
+    float: right;
+    & img {
+        padding: 20px;
+    }
+}
+
+.card {
+    font-family: 'GothamLight', sans-serif;
+    background: white;
+}
+
+.bg-grey {
+    background-color: $bg-grey;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; // margin:5%;
+    & a:first-of-type {
+        float: left;
+    }
+}
+
+.welcome-screen {
+    background-image: url('../photography/macbook dark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    & h1 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px 60px 20px;
+    .card {
+        width: 30%;
+        & :not(img) {
+            padding: 20px;
+        }
+        & img {
+            width: 100%;
+        }
+        @media (max-width: $mobile) {
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+}
+
+.last-section {
+    font-family: 'Butler', serif;
+    background: url('../photography/china.jpg') no-repeat center;
+    background-size: cover; // height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    & input {
+        font-family: 'Chronicle Display', serif;
+        width: 250px;
+        padding: 15px;
+        font-family: 'GothamLight', serif;
+        font-size: 15px;
+        height: 50px;
+        &[type="submit"] {
+            transform: translate(-20px, 0);
+            width: 75px;
+            height: 50px;
+            background-color: $bg-dark-grey;
+            color: white;
+            border-style: none;
+            @media (max-width: $mobile){
+                width: 250px;
+                transform: translate(0, 0);
+            }
+        }
+    }
+}
+
+.tab-content {
+    background: url('../photography/cereal2.png') no-repeat center;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Chronicle Display', serif;
+    color: white;
+    font-size: 2em;
+    & button {
+        width: 160px;
+        height: 45px;
+        margin: 20px;
+        background-color: black;
+        color: white;
+        font-family: 'GothamLight', sans-serif;
+        text-transform: uppercase;
+        border: 0;
+    }
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+.tab-link {
+    list-style: none;
+    width: 25%;
+    background-color: $bg-grey;
+    font-size: 0;
+    height: 5px;
+    transition: background-color 0.5s;
+    &.active {
+        background-color: black;
+    }
+}
+
+.next,
+.prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    height: 70px;
+    width: 50px;
+    font-size: 0;
+}
+
+.next {
+    right: 5%;
+}
+
+.prev {
+    left: 5%;
+}
+
+section {
+    position: relative;
+}
+
+form {
+    padding: 50px;
+}
+
+
+
+img[src^="icon"], img[src^="logo"] {
+    height: 65px;
+}
+
+.social-btns {
+    padding: 20px;
+    @media (max-width: $mobile) {
+        padding: 3px;
+    }
+}
