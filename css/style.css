@@ -3,10 +3,10 @@
   src: "../fonts/Butler_and_ButlerStencil/Butler/Butler_Regular.otf"; }
 @font-face {
   font-family: 'GothamLight';
-  src: "../fonts/gothamlight regular/gothamlight regular.otf"; }
+  src: "../fonts/GothamLight Regular/GothamLight Regular.otf"; }
 @font-face {
   font-family: 'Chronicle Display-Roman';
-  src: "../fonts/chronicle display roman/chronicle display roman.otf"; }
+  src: "../fonts/Chronicle Display Roman/Chronicle Display Roman.otf"; }
 * {
   box-sizing: border-box;
   margin: 0;
@@ -65,7 +65,7 @@ nav {
     float: left; }
 
 .welcome-screen {
-  background-image: url("../photography/macbook dark.jpg");
+  background-image: url("../Photography/MacBook dark.jpg");
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -95,7 +95,7 @@ nav {
 
 .last-section {
   font-family: 'Butler', serif;
-  background: url("../photography/china.jpg") no-repeat center;
+  background: url("../Photography/China.jpg") no-repeat center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -121,7 +121,7 @@ nav {
           transform: translate(0, 0); } }
 
 .tab-content {
-  background: url("../photography/cereal2.png") no-repeat center;
+  background: url("../Photography/cereal2.png") no-repeat center;
   background-size: cover;
   height: 450px;
   display: flex;
@@ -176,7 +176,8 @@ section {
 form {
   padding: 50px; }
 
-img[src^="icon"], img[src^="logo"] {
+img[src^="icon"],
+img[src^="logo"] {
   height: 65px; }
 
 .social-btns {

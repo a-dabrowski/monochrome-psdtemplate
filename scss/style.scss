@@ -8,12 +8,12 @@ $bg-dark-grey: #8e8e8e;
 
 @font-face {
     font-family: 'GothamLight';
-    src: ('../fonts/gothamlight regular/gothamlight regular.otf');
+    src: ('../fonts/GothamLight Regular/GothamLight Regular.otf');
 }
 
 @font-face {
     font-family: 'Chronicle Display-Roman';
-    src: ('../fonts/chronicle display roman/chronicle display roman.otf');
+    src: ('../fonts/Chronicle Display Roman/Chronicle Display Roman.otf');
 }
 
 * {
@@ -22,7 +22,7 @@ $bg-dark-grey: #8e8e8e;
     padding: 0;
 }
 
-form{
+form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -86,7 +86,7 @@ nav {
 }
 
 .welcome-screen {
-    background-image: url('../photography/macbook dark.jpg');
+    background-image: url('../Photography/MacBook dark.jpg');
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -122,7 +122,7 @@ nav {
 
 .last-section {
     font-family: 'Butler', serif;
-    background: url('../photography/china.jpg') no-repeat center;
+    background: url('../Photography/China.jpg') no-repeat center;
     background-size: cover; // height: 30vh;
     display: flex;
     flex-direction: column;
@@ -142,7 +142,7 @@ nav {
             background-color: $bg-dark-grey;
             color: white;
             border-style: none;
-            @media (max-width: $mobile){
+            @media (max-width: $mobile) {
                 width: 250px;
                 transform: translate(0, 0);
             }
@@ -151,7 +151,7 @@ nav {
 }
 
 .tab-content {
-    background: url('../photography/cereal2.png') no-repeat center;
+    background: url('../Photography/cereal2.png') no-repeat center;
     background-size: cover;
     height: 450px;
     display: flex;
@@ -216,9 +216,8 @@ form {
     padding: 50px;
 }
 
-
-
-img[src^="icon"], img[src^="logo"] {
+img[src^="icon"],
+img[src^="logo"] {
     height: 65px;
 }
 
